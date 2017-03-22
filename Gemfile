@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'jquery-turbolinks'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -55,3 +57,23 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'sass-rails'
+
+group :development do
+  gem 'letter_opener'
+  gem 'spring'
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'awesome_print'
+  gem 'bullet'
+  gem 'bundler-audit', '>= 0.5.0', require: false
+  gem 'dotenv-rails'
+  gem 'factory_girl_rails'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.5.0.beta4'
+  gem 'awesome_print'
+  gem 'hirb'
+  gem 'hirb-unicode'
+end
